@@ -37,6 +37,14 @@ console.log(validateCreditCard(cardDetails)); // Master Card
 const cardNumber2 = "347467626828424"    // Ameerican card
 console.log(validateCreditCard(cardNumber2));
 
+
+const cardNumber3 = "6577767626828424"    // Discover card
+console.log(validateCreditCard(cardNumber3));
+
+const cardNumber4 = "1247467626828424"    // invalid card
+console.log(validateCreditCard(cardNumber4));
+
+
 function interactWithUser() {
     rl.question("Enter card number: ", (userInput) => {
         console.log(validateCreditCard(userInput)); // Passing userInput instead of cardNumber
